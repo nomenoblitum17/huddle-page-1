@@ -8,7 +8,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, 1fr);
     grid-template-rows: 1fr 5fr;
-    width: 100%;;
+    width: 100%;
     padding: 6%;
     padding-top: 3em;
     box-sizing: border-box;
@@ -38,7 +38,8 @@
     border: none;
     border-radius: 300px;
     color: hsl(192, 100%, 9%);
-    font-weight: 700;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
     transition: color 0.2s ease-in-out;
     box-shadow: 0px 3px 10px #444;
     font-size: 16px;
@@ -65,11 +66,15 @@
 .c2 h3 {
     font-size: 34px;
     color:hsl(192, 100%, 9%);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
 }
 
 .c2 p {
     color:hsl(192, 100%, 9%);
     line-height: 1.4;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
 }
 
 .c2 button {
@@ -125,11 +130,14 @@
     font-size: 26px;
     margin: 7% 0;
     color: hsl(192, 100%, 9%);
+    font-family: 'Poppins', sans-serif;
 }
 
 .section-text p {
     color: hsl(208, 11%, 55%);
     line-height: 1.5;
+    font-weight: 400;
+     font-family: 'Open Sans', sans-serif;
 }
 
 .card-pic-right img {
@@ -165,6 +173,7 @@ footer {
     position: relative;
     background:  hsl(192, 100%, 9%);
     color: #fff;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .get-started {
@@ -188,6 +197,7 @@ footer {
     text-align: center;
     font-size: 26px;
     color:hsl(192, 100%, 9%);
+    font-family: 'Poppins', sans-serif;
 }
 
 .get-started button {
@@ -198,10 +208,11 @@ footer {
     border: none;
     border-radius: 300px;
     color: #fff;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 16px;
     transition: background 0.2s ease-in-out;
     box-shadow: 0px 3px 10px #444;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .get-started button:hover {
@@ -234,6 +245,8 @@ footer {
 .footer a {
     color: #fff;
     text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    height: 21px;
 }
 
 .footer a:hover {
@@ -241,20 +254,56 @@ footer {
 }
 
 .footer4 {
-    display: flex; 
+    display: flex;
     flex-direction: column;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
-.footer4 img {
+.social {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.img-container a svg{
+    object-fit: contain;
+    width: 15px;
+    height: 15px;   
+    align-self: center;
+    margin: 0;
+    fill: #fff;
+}
+
+.img-container a {
     width: 30px;
-    margin-right: 8%;
-    border-radius: 100%;
-    filter: invert(100%);
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius:100%;
+    box-sizing: border-box;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.footer4 img:hover {
-    
+.img-container a:hover {
+    border: 2px solid hsl(322, 100%, 66%);
+    fill: hsl(322, 100%, 66%);
+}
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8%;
+    /*border: 2px solid #fff;*/
+    border-radius: 100%;
+    transition: fill border 0.2s ease-in-out;
+}
+
+.img-container a svg:hover {
+    fill: hsl(322, 100%, 66%) ; 
 }
 
 .footer li {
@@ -270,6 +319,7 @@ footer {
         padding-top: 1vh;
         margin: 0 auto;
         background-image: url("images/bg-hero-mobile.svg");
+        padding-bottom: 0;
     }
 
     .c2 button {
@@ -361,6 +411,11 @@ footer {
         margin-bottom: 10%;
     }
 
+    .footer-logo {
+        width: 50%;
+        max-width: 200px;
+    }
+
     .footer1 div {
         padding-right: 0;
     }
@@ -376,6 +431,7 @@ footer {
     .footer4 {
         justify-content: center;
         align-items: center;
+       padding-bottom: 40px;
     }
     
     .footer4 img {
@@ -385,5 +441,7 @@ footer {
     .social {
         width: 100%;
         text-align: center;
+        justify-content: center;
+        margin-bottom: 5%;
     }
 }
